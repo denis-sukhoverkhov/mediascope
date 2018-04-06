@@ -1,3 +1,9 @@
+# How it use
+1) Install dependencies
+2) Install db `python3.6 install_db.py --path ./tmp/dbs.zip` where `./tmp/dbs.zip` is a path to archive with database.
+3) run the server `FLASK_APP=app.py flask run`
+
+# Task
 Необходимо реализовать web-сервис на Python.
 
 На входе есть архив с двумя файлами БД SQLite:
