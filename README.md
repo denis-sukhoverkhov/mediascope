@@ -30,18 +30,12 @@
 [
         {
                "date": 1520414609803,
-
                "event": "Elen Farmer hug Peter Jenkins"
         },
-
         ...
-
         {
-
                ...
-
         }
-
 ]
 ```
 
