@@ -19,8 +19,12 @@ def main(arguments):
         logging.exception(error_message)
         sys.exit(error_message)
 
+    dst = './db'
+    if not os.path.exists(dst):
+        os.makedirs(dst)
+
     with zipfile.ZipFile(arguments.path, "r") as zip_ref:
-        zip_ref.extractall('./')
+        zip_ref.extractall(dst)
 
 
 if __name__ == "__main__":
