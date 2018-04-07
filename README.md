@@ -1,7 +1,12 @@
 # How it use
 1) Install dependencies
 2) Install db `python3.6 install_db.py --path ./tmp/dbs.zip` where `./tmp/dbs.zip` is a path to archive with database.
+3) Start unittests
+```bash
+python3.6 -m unittest
+``` 
 3) run the server `FLASK_APP=app.py flask run`
+4) Test query `http://127.0.0.1:5000/logs?from=1.383253541E12&to=1.383334735E12&page=1&items=20`
 
 # Task
 Необходимо реализовать web-сервис на Python.
