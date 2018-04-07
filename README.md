@@ -5,7 +5,7 @@
 ```bash
 python3.6 -m unittest
 ``` 
-3) run the server `FLASK_APP=app.py flask run`
+3) run the server `python3.6 app.py `
 4) Test query `http://127.0.0.1:5000/logs?from=1.383253541E12&to=1.383334735E12&page=1&items=20`
 
 # Task

@@ -18,7 +18,7 @@ app = create_app()
 
 
 def prepare_sql_query_log(date_from, date_to, page_number, item_size):
-    log_query = f"SELECT * FROM logs "
+    log_query = "SELECT * FROM logs"
 
     if date_from and not date_to:
         log_query = f"{log_query} WHERE dt >= {date_from} "
@@ -78,7 +78,7 @@ def logs():
     user_list = query_db(cur, user_query)
 
     result = enrich_logs(log_list, user_list)
-    return json.dumps(result)
+    return json.dumps(result, indent=4, sort_keys=True)
 
 
 if __name__ == '__main__':
